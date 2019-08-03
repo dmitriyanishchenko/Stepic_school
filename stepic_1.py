@@ -1,7 +1,11 @@
 # a = 11111 * 1111111
 # print(a)
+
+
 # # result = 42 / (2*-2 + 4)
 # # print(result)
+
+
 # a = 2014 ** 14
 # print(0.3 + 0.3 + 0.3)
 # print(5 / 2)
@@ -17,10 +21,12 @@
 # print(7 // 3)
 # print(type(str(2.2)))
 # print(type(2))
-# a = 2.9955454454
-# c = int(a)
-# print(a, c)
-# print(type(a), type(c))
+
+a = 2.9955454454
+c = int(a)
+print(a, c)
+print(type(a), type(c))
+
 # print(int(-1.6))
 # print(9 ** 19 - int(float(9 ** 19)))
 # say_1 = 9 ** 19
@@ -62,16 +68,18 @@
 # print(res)
 # for __ in string:
 #     print(__)
-#
+
 # dict_1 = {x: str(x) + 'abc' for x in range(5)}
 # print(dict_1)
 #
 # print(5 != 2+3)
 
-
-# while 1:
-#     x = int(input('Enter number:'))
-#     print('negative') if x < 0 else print('positive')
+"""
+Ввод числа с консоли, тернарный оператор применяем и выводим 
+сообщение 'pozitive' или 'negative' в зависимости от знака числа
+"""
+# x = int(input('Enter number:'))
+# print('negative') if x < 0 else print('positive')
 
 # while 2:
 #     x = int(input('Enter еwo-digit positive number:'))

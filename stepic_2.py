@@ -161,23 +161,23 @@
 #         print('*', end='')
 #     print()
 
-lst = [11**11, 1-8, 9e-12, 12, 23, 4, 17, 134,
-       44,
-       55,
-       666,
-       7777,
-       8888,
-       99999
-       ]
-h = [343, 765, 88, 67]
-lst.extend(h)
-
-for idx, val in enumerate(lst):
-    print(f'{idx} : {val}')
-print(f'len lst is {len(lst)}')
-print(f'min value is {min(lst)}')
-print(f'max value is {max(lst)}')
-print(f'sum items is {sum(lst)}')
+# lst = [11**11, 1-8, 9e-12, 12, 23, 4, 17, 134,
+#        44,
+#        55,
+#        666,
+#        7777,
+#        8888,
+#        99999
+#        ]
+# h = [343, 765, 88, 67]
+# lst.extend(h)
+#
+# for idx, val in enumerate(lst):
+#     print(f'{idx} : {val}')
+# print(f'len lst is {len(lst)}')
+# print(f'min value is {min(lst)}')
+# print(f'max value is {max(lst)}')
+# print(f'sum items is {sum(lst)}')
 
 
 # lst = [11, 18, 9, 12, 23, 4, 17]
