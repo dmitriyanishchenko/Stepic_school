@@ -270,12 +270,23 @@
 на этом отрезке 6: −3,0,3,6,9,12. Их среднее арифметическое равно 4.5
 На вход программе подаются интервалы, внутри которых всегда есть хотя бы одно число, которое делится на 3.﻿
 """
-a, b = (int(i) for i in input().split())
-s = 0
+# a, b = (int(i) for i in input().split())
+# s = 0
+# count = 0
+# for elem in range(a, b + 1):
+#     if elem % 3 == 0:
+#         s += elem
+#         count += 1
+# res = s / count
+# print(res)
+
+"""
+Подсчитать сколько  в строке символов 'C'
+"""
+genome = input()
 count = 0
-for elem in range(a, b + 1):
-    if elem % 3 == 0:
-        s += elem
+for nuc in genome:
+    if nuc == 'C':
         count += 1
-res = s / count
-print(res)
+print(count)
+
