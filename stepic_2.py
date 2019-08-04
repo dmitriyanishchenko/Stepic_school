@@ -214,19 +214,68 @@
 Заметьте, что левым столбцом и верхней строкой выводятся сами числа из заданных отрезков — заголовочные столбец 
 и строка таблицы
 """
-c, d, a, b = int(input()), int(input()), int(input()), int(input())
+# c, d, a, b = int(input()), int(input()), int(input()), int(input())
+#
+# if a <= b and c <= d:
+#     str_1 = '    '
+#     for val in range(a, b + 1):
+#         str_1 += str(val)
+#         str_1 += '\t'
+#     print(str_1)
+#     str_2 = ''
+#     for i in range(c, d + 1):
+#         str_2 = str(i) + '\t'
+#         for j in range(a, b + 1):
+#             str_2 += str(i * j) + '\t'
+#         print(str_2)
+# else:
+#     print('Invalid input')
+"""
+Вывести сумму всех целых  нечетных чисел  от a до b, включая обе границы
+"""
+# a, b = input().split() # Вариант 1
+# a = int(a)
+# b = int(b)
+# s = 0
+# for elem in range(a, b + 1):
+#     if elem % 2 == 1:# проверка на нечетность внутри цикла
+#         s += elem
+# print(s)
 
-if a <= b and c <= d:
-    str_1 = '    '
-    for val in range(a, b + 1):
-        str_1 += str(val)
-        str_1 += '\t'
-    print(str_1)
-    str_2 = ''
-    for i in range(c, d + 1):
-        str_2 = str(i) + '\t'
-        for j in range(a, b + 1):
-            str_2 += str(i * j) + '\t'
-        print(str_2)
-else:
-    print('Invalid input')
+
+# a, b = input().split()  # Вариант 2
+# a = int(a)
+# b = int(b)
+# s = 0
+# if a % 2 == 0: # если начальный элемент четный,
+#     a += 1 # то  добавляем к нему единицу
+# for elem in range(a, b + 1, 2): # в цикле идем только по нечетным элементам
+#     s += elem # и суммируем
+# print(s)
+
+
+# # Вариант 3
+# a, b = (int(i) for i in input().split())  # при вводе используем функцию List Comprehension
+# s = 0
+# if a % 2 == 0:
+#     a += 1
+# for elem in range(a, b + 1, 2):
+#     s += elem
+# print(s)
+
+"""
+Напишите программу, которая считывает с клавиатуры два числа a и b, считает и выводит на консоль среднее
+арифметическое всех чисел из отрезка [a;b], которые делятся на 3.
+В приведенном ниже примере среднее арифметическое считается для чисел на отрезке [−5;12]. Всего чисел, делящихся на 3,
+на этом отрезке 6: −3,0,3,6,9,12. Их среднее арифметическое равно 4.5
+На вход программе подаются интервалы, внутри которых всегда есть хотя бы одно число, которое делится на 3.﻿
+"""
+a, b = (int(i) for i in input().split())
+s = 0
+count = 0
+for elem in range(a, b + 1):
+    if elem % 3 == 0:
+        s += elem
+        count += 1
+res = s / count
+print(res)
