@@ -6,7 +6,7 @@ Babel==2.6.0
 backports-abc==0.5
 backports.functools-lru-cache==1.5
 backports.shutil-get-terminal-size==1.0.0
-bleach==3.1.0
+bleach==3.1.1
 blinker==1.4
 brial==1.0.2
 certifi==2018.8.24
