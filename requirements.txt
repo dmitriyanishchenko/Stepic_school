@@ -90,7 +90,7 @@ python-dateutil==2.7.3
 python-openid==2.2.5
 pytz==2019.1
 pyxdg==0.25
-PyYAML==3.13
+PyYAML==5.4
 pyzmq==17.1.2
 requests==2.21.0
 roman==2.0.0
